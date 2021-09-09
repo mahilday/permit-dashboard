@@ -59,13 +59,13 @@
   transition: all .4s ease-in-out;
 }
 .container:hover, .active{
-  border-left:4px solid rgb(224, 224, 21);
+  border-left:4px solid #ffc107;
   /* border-bottom:1px solid rgb(52, 52, 136); */
   background-color: #fff /*rgb(233, 233, 233)*/;
 }
 
 .text-yellow{
-  color: rgb(224, 224, 21);
+  color: #ffc107;
 }
 .permit_type{
   text-transform:capitalize !important;
