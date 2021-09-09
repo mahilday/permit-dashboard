@@ -16,7 +16,7 @@ const getPermits = async () => {
   });
   console.log(newPermit);
   const tenMaxPermits = newPermit.slice(-10)
-  return tenMaxPermits;
+  return tenMaxPermits.reverse();
 };
 
 function* fetchPermitsSaga(): Generator<any, void, permits> {
