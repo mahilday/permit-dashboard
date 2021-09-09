@@ -116,6 +116,9 @@
   -ms-overflow-style: none;
   scrollbar-width: none; 
 }
+.hide{
+  display: none;
+}
 .housing-dets::-webkit-scrollbar{
   display: none;
 }

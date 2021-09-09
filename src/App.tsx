@@ -48,7 +48,7 @@ function App() {
         <div className="main_container ">
           <main>
             <header className="flexnow header_width">
-              <aside onClick={()=>{setActivePermit({permit: {}}); console.log(activePermit.permit)}} className={` ${Object.entries(activePermit.permit).length === 0 ? "hidden": "entireAside"}`}>
+              <aside onClick={()=>{setActivePermit({permit: {}}); console.log(activePermit.permit)}} className={` hide ${Object.entries(activePermit.permit).length === 0 ? "hidden": "entireAside"}`}>
                 <div className="icon">
                   <FontAwesomeIcon icon="chevron-left" />
                 </div>
