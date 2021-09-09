@@ -22,7 +22,7 @@ function App() {
         <div>Error</div>
       ): (
         permits?.map((permit: any)=>(
-          <div key={permit.id}>
+          <div className="" key={permit.id}>
             {permit.permit_type}
             </div>
         ))
