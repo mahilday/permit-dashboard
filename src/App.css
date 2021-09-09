@@ -181,6 +181,9 @@
   .hidden{
     display: none
   }
+  .smallScreen{
+    font-size: 14px;
+  }
   .header_container{
     height: 10%;
   }
