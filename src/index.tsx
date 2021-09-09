@@ -5,7 +5,10 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { Provider } from 'react-redux';
 import store from './provider/Store';
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { faChevronLeft, fas } from '@fortawesome/free-solid-svg-icons'
 
+library.add(fas, faChevronLeft)
 ReactDOM.render(
   <React.StrictMode>
     <Provider store={store}>

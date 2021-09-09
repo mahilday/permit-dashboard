@@ -1,7 +1,255 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+  padding: 0;
+  margin:0;
+  box-sizing:border-box;
+}
 .App {
-  text-align: center;
+  font-family: "Poppins", sans-serif;
+  text-align: left;
+  background-color: rgb(52, 52, 136);;
+  height: 100vh;
 }
+.header_container{
+  height: 6%;
+  padding:0 5%;
+  display: flex;
+  align-items: center;
+}
+.text-white{
+  color:#fff;
+}
+.main_container{
+  height: 94%;
+  border-top-left-radius:50px;
+  background-color: #fafafa;
+  padding: 10px 3%;
+}
+.main_container>main{
+  padding-top: 2%;
+}
+.main_container>main>header{
+  padding: 2% 0;
+}
+.main_container>main>main>aside{
+  -ms-overflow-style: none;
+  scrollbar-width: none; 
+  width: 35%;
+  overflow-y: scroll;
+  height:75vh;
+}
+.main_container>main>main{
+  display: flex;
+}
+.main_container>main>main>aside::-webkit-scrollbar{
+  display: none;
+}
+
 .container{
-  width: 10vw;
-  height: 4vh;
+  width: 30vw;
+  margin: 20px 0;
+  height: 13vh;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  padding:1% 3%;
+  background-color: #f1f1f1;
+  border-radius: 10px;
+  border:none;
+  transition: all .4s ease-in-out;
 }
+.container:hover, .active{
+  border-left:4px solid rgb(224, 224, 21);
+  /* border-bottom:1px solid rgb(52, 52, 136); */
+  background-color: #fff /*rgb(233, 233, 233)*/;
+}
+
+.text-yellow{
+  color: rgb(224, 224, 21);
+}
+.permit_type{
+  text-transform:capitalize !important;
+  font-weight: 600;
+  color:rgb(52, 52, 136);
+}
+.space_around{
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  text-transform: lowercase;
+}
+.bold{
+  font-weight:500;
+}
+.boldest{
+  font-weight: 800;
+}
+.text-blue{
+  color: rgb(52, 52, 136);;
+}
+.date{
+  padding-top:7px;
+  color:rgb(52, 52, 136);
+}
+.small{
+  font-size: 12px;
+}
+.xs{
+  font-size: 10px;
+}
+.bolder{
+  font-weight: 600;
+}
+.pl-sm{
+  padding-left: 10px;
+}
+.housing-dets{
+  height: 75vh;
+  max-width: 60vw;
+  box-shadow: 1px 1px 20px rgb(224, 227, 228);
+  border-radius: 20px;
+  display:flex;
+  flex-direction: column;
+  flex: auto;
+  padding: 3%;
+  overflow-y: scroll;
+  -ms-overflow-style: none;
+  scrollbar-width: none; 
+}
+.housing-dets::-webkit-scrollbar{
+  display: none;
+}
+.center{
+  display: flex;
+  justify-content: center;
+}
+.imgsize{
+  width: 80%;
+  height: 80%;
+  display: block;
+  margin-right: auto;
+  margin-left:auto;
+}
+.work_des{
+  text-transform: lowercase;
+  margin: 5% 0;
+  display: flex;
+  flex-direction: column;
+}
+.flex{
+  display: flex;
+  justify-content: space-between;
+}
+.new{
+  margin: 10px 0;
+}
+.work_des>span{
+  margin:3% 0;
+}
+.text-gray{
+  color: #666;
+}
+.data_headers{
+  text-transform: uppercase;
+}
+.icon{
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  box-shadow: 1px 1px 10px #666;
+}
+.entireAside{
+  display: none;
+}
+
+.flex-only{
+  display: flex;
+  justify-content: space-around;
+}
+.centerMain{
+  margin-top: 10vh;
+  margin-bottom: auto;
+  height: max-content
+}
+@media only screen and (max-width: 699px) {
+  .hidden{
+    display: none
+  }
+  .header_container{
+    height: 10%;
+  }
+  .main_container{
+    height: 90%;
+    padding: 10px 3%;
+  }
+  .flexnow{
+    display: flex;
+  }
+  .entireAside{
+    display: flex;
+    align-items: center;
+    margin-right: 5px;
+  }
+  .main_container>main>main>aside{
+    width: 100%;
+    height: 80vh;
+   
+  }
+  .header_width{
+    width: 90%;
+  }
+.text-md{
+  font-size: 20px;
+}
+  .housing-dets{
+    max-width: 100%;
+    height: 80vh;
+  }
+  .work_des{
+    font-size: 12px;
+  }
+  .data_headers{
+    font-size: 13px;
+  }
+  .container{
+    width: 100%;
+  }
+  .logo{
+    font-size: 16px;
+  }
+}
+
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 700px) and (max-width: 991px) {
+  .permit_type{
+    font-size: 12px;
+  }
+  .container{
+    padding: 0 20px;
+    height: 11vh;
+  }
+  .inactiveText{
+    font-size: 15px;
+    width: 70%;
+    margin: auto;
+    text-align: center;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .permit_type{
+    font-size: 14px;
+  }
+  .container{
+    padding: 0 20px;
+    height: 8vh;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {}
